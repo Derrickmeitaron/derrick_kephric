@@ -98,7 +98,7 @@ const SignUpComponent = () => {
                         value={phone}
                     /><br />
                     <br />
-                    <button className="btn btn-dark">sign Up</button><br />
+                    <button className="btn btn-dark glow-on-hover">sign Up</button><br />
                     <Link to="/signin">already have an account? sign In</Link>
 
                 </form>

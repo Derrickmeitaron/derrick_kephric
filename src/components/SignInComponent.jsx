@@ -28,7 +28,7 @@ const SignInComponent = () => {
             user_data.append("email", email);
             user_data.append("password", password);
 
-            const response = await axios.post("https://kmuturi.alwaysdata.net/api/signin", user_data)
+            const response = await axios.post("https://derrick.alwaysdata.net/api/signin", user_data)
 
             console.log(response.data);
             if (response.status === 200) {
