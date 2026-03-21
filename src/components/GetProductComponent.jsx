@@ -48,12 +48,12 @@ const GetProducts = () => {
                     <div className="card shadow card-margin">
                         <img src={img_url + product.product_image} alt="" className="product_img mt-4" />
 
-                        <div className="card-body">
+                        <div className="card-body justify-content-center">
                             <h5 className="mt-2">{product.product_name}</h5>
                             <p className="text-muted">{product.product_description}</p>
                             <b className="text-warning">{product.product_cost}</b>
                             <br />
-                            <button className="btn-dark btn liquid" onClick={() => { navigator("/makepayment", { state: { product } }) }}>purchase now</button>
+                            <button className="pay-btn" onClick={() => { navigator("/makepayment", { state: { product } }) }}><span>🛒 Pay Now</span></button>
                         </div>
                     </div>
                 </div>
