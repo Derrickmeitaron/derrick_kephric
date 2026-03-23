@@ -19,8 +19,27 @@ const Navbar = () => {
 
             <div className="collapse navbar-collapse" id="navbarcollapse">
                 <div className="navbar-nav">
-                    <Link className="nav-link" to="/">home</Link>
-                    <Link className="nav-link" to="/addproduct">addproduct</Link>
+
+                    {/* Show ONLY when user is logged in */}
+                    {user && (
+                        <Link className="nav-link" to="/">
+                            Home
+                        </Link>
+                        
+                    )}
+
+                    {/* Show ONLY when user is NOT logged in */}
+                    {!user && (
+                        <>
+                            <Link className="nav-link" to="/signin">
+                                Sign In
+                            </Link>
+                            <Link className="nav-link" to="/signup">
+                                Sign Up
+                            </Link>
+                        </>
+                    )}
+
                 </div>
 
                 {user ?

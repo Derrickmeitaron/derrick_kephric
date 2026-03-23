@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { useLocation } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const MakePayment = () => {
     const { product } = useLocation().state || {}
@@ -42,7 +43,8 @@ const MakePayment = () => {
         }
     }
     return (
-        <div className="row justify-content-center mt-4">
+        <div className="row justify-content-center mt-4" id="dmx">
+            <Navbar />
             <h2>lipa na mpesa</h2>
             <div className="col-md-3">
                 <img src={img_url + product.product_image} alt="" className="rounded img-thumbnail" />

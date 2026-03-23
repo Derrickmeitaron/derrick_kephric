@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const GetProducts = () => {
 
@@ -35,7 +36,8 @@ const GetProducts = () => {
 
     useEffect(() => { GetProducts() }, [])
     return (
-        <div className="row">
+        <div className="row glass" id="dmx">
+            <Navbar />
             <h3>available products</h3>
             <h5 className="text-warning">{loading}</h5>
             <h5 className="text-danger">{error}</h5>

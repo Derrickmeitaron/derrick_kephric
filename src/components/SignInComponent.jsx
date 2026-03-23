@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import Navbar from "./Navbar";
 
 const SignInComponent = () => {
     let [email, updateEmail] = useState("");
@@ -53,7 +54,8 @@ const SignInComponent = () => {
 
     }
     return (
-        <div className="row justify-content-center mt-4">
+        <div className="row justify-content-center mt-4" id="dmx">
+            <Navbar />
             <div className="col-md-6 card shadow p-4">
                 <h2>sign in</h2>
                 <h5 className="text-warning">{loading}</h5>

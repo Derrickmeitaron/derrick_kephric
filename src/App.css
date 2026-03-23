@@ -67,6 +67,7 @@
   border-radius: 10px;
 }
 
+
 @keyframes glowing {
   0% {
     background-position: 0 0;
@@ -157,6 +158,45 @@
 .pay-btn:hover::before {
   transform: translate(-50%, -50%) scale(1);
   opacity: 0;
+}
+
+/* Luxury Dark Background */
+
+/* Luxury card (product container) */
+.card {
+  background: rgba(20, 20, 20, 0.9);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 60px rgba(212, 175, 55, 0.25);
+}
+
+/* Gold text highlight */
+.gold-text {
+  color: #d4af37;
+}
+
+/* Premium button */
+.button {
+  background: linear-gradient(135deg, #d4af37, #ffd700);
+  color: #000;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background: linear-gradient(135deg, #ffd700, #d4af37);
+  transform: scale(1.05);
 }
 
 .App-link {
