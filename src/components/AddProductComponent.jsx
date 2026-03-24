@@ -92,10 +92,11 @@ const AddProductComponent = () => {
                     <select className="form-select"
                         required
                         onChange={(e) => { setProductcategory(e.target.value) }}>
-                        <option value="taps">taps</option>
+                        <option value=""></option>
                         <option value="tanks">tanks</option>
                         <option value="joints">joints</option>
                         <option value="pipes">pipes</option>
+                        <option value="taps">taps</option>
                     </select>
 
                     <br />

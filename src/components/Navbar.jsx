@@ -25,7 +25,14 @@ const Navbar = () => {
                         <Link className="nav-link" to="/">
                             Home
                         </Link>
-                        
+
+
+                    )}
+                    {/* Show Add Product ONLY if user is damian */}
+                    {user && (
+                        <Link className="nav-link" to="/addproduct">
+                            Add Product
+                        </Link>
                     )}
 
                     {/* Show ONLY when user is NOT logged in */}
