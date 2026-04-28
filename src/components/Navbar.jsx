@@ -1,10 +1,10 @@
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 
 const Navbar = () => {
 
     const user = JSON.parse(localStorage.getItem("user"));
 
-    let navigator = useNavigate()
+    // let navigator = useNavigate()
     const handlelogout = () => {
         localStorage.clear();
         Navigate("/signin")
